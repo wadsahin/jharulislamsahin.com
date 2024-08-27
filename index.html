@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jharul Islam Sahin</title>
+  <!-- Google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- tailwind & daisyui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            'font-body': ["Open Sans", sans - serif],
+            'font-title': ["Montserrat", sans - serif],
+            'font-paragraph': ["./assets/fonts/FuturaCyrillicMedium.ttf", sans - serif]
+          }
+        }
+
+      }
+    }
+  </script>
+  <!-- Internal css -->
+  <style>
+    .font-body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .font-title {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+
+</head>
+
+<body class="font-body bg-gradient-to-br from-slate-800 to-slate-700 text-white">
+  <!-- header -->
+  <header class="w-11/12 lg:w-4/6 mx-auto">
+    <div class="navbar text-white py-5">
+      <div class="navbar-start">
+        <a class="text-4xl font-bold">Portfolio</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Services</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <!-- dropdown menu -->
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <i class="fa-solid fa-bars-staggered text-2xl"></i>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+            <li><a>Item 1</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <!-- profile -->
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+            <div class="w-20 rounded-full border-2 border-cyan-400">
+              <img alt="Tailwind CSS Navbar component"
+                src="./assets/images/profile-1.png" />
+            </div>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-red-200 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
+            <li>
+              <a class="justify-between">
+                Profile
+                <span class="badge">New</span>
+              </a>
+            </li>
+            <li><a>Logout</a></li>
+          </ul>
+        </div>
+        <!-- profile end -->
+      </div>
+    </div>
+    <!-- Hero section -->
+     <section class="py-10">
+      <!-- section container -->
+       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <!-- column 1 -->
+         <div class="space-y-4">
+          <p class="text-xl font-semibold">Hello, <span class="text-teal-500">I'm</span></p>
+          <h2 class="text-5xl text-teal-500 font-extrabold leading-tight">Jharul Islam Sahin</h2>
+          <h3 class="text-2xl sm:text-3xl text-white font-bold">Front-end Developer</h3>
+          <p class="text-sm text-gray-400">With knowledge in web development and design, I offer the best projects resulting in quality work.</p>
+          <a class="btn bg-teal-500 text-white border-none" href="#">Let's Talk</a>
+         </div>
+        <!-- column 2 -->
+         <div>
+          <img class="rounded-full" src="./assets/images/profile-3.png" alt="">
+         </div>
+         
+       </div>
+     </section>
+  </header>
+  <!-- main -->
+  <main class="w-11/12 lg:w-4/6 mx-auto">
+  </main>
+  <!-- footer -->
+  <footer>
+
+  </footer>
+</body>
+
+</html>
