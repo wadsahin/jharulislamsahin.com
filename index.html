@@ -16,6 +16,8 @@
   <!-- tailwind & daisyui cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Typed text animation Library CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <!-- tailwind configuration -->
   <script>
     tailwind.config = {
@@ -102,8 +104,8 @@
         <!-- column 1 -->
          <div class="space-y-4">
           <p class="text-xl font-semibold">Hello, <span class="text-teal-500">I'm</span></p>
-          <h2 class="text-5xl text-teal-500 font-extrabold leading-tight">Jharul Islam Sahin</h2>
-          <h3 class="text-2xl sm:text-3xl text-white font-bold">Front-end Developer</h3>
+          <h2 class="text-5xl font-extrabold leading-tight">Jharul Islam Sahin</h2>
+          <h3 class="text-2xl sm:text-3xl text-white font-bold">I'm a <span id="animation" class="text-teal-500"></span></h3>
           <p class="text-sm text-gray-400">With knowledge in web development and design, I offer the best projects resulting in quality work.</p>
           <a class="btn bg-teal-500 text-white border-none" href="#">Let's Talk</a>
          </div>
@@ -122,6 +124,9 @@
   <footer>
 
   </footer>
+
+  <!-- Link to JavaScript -->
+   <script src="main.js"></script>
 </body>
 
 </html>
