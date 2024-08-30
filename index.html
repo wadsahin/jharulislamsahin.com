@@ -54,17 +54,17 @@
 
 <body class="font-body bg-gradient-to-br from-slate-800 to-slate-700 text-white">
   <!-- header -->
-  <header class="w-11/12 lg:w-4/6 mx-auto">
+  <header class="w-11/12 lg:w-9/12 mx-auto">
     <div class="navbar text-white py-5">
       <div class="navbar-start">
         <a class="text-4xl font-bold">Portfolio</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Services</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="services">Services</a></li>
+          <li><a href="contact">Contact</a></li>
         </ul>
       </div>
       <div class="navbar-end">
@@ -82,8 +82,8 @@
         <!-- profile -->
         <div class="dropdown dropdown-end">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-            <div class="w-20 rounded-full border-2 border-teal-500">
-              <img alt="Tailwind CSS Navbar component" src="./assets/images/profile-1.png" />
+            <div class="w-20 rounded-full md:border-2 border-teal-500">
+              <i class='bx bx-user text-4xl md:text-4xl'></i>
             </div>
           </div>
           <ul tabindex="0"
@@ -101,9 +101,9 @@
       </div>
     </div>
     <!-- Hero section -->
-    <section class="py-10">
+    <section id="home" class="py-10">
       <!-- section container -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <!-- column 1 -->
         <div class="space-y-4">
           <p class="text-xl font-semibold">Hello, <span class="text-teal-500">I'm</span></p>
@@ -135,16 +135,16 @@
     </section>
   </header>
   <!-- main -->
-  <main class="w-11/12 lg:w-4/6 mx-auto">
+  <main class="w-11/12 lg:w-9/12 mx-auto">
     <!-- AboutUs Section -->
-    <section class="py-14 lg:py-20">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <section id="about" class="py-14 lg:py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <!-- column 1 -->
-        <div class="order-2 lg:order-1">
+        <div class="order-2 md:order-1 lg:w-11/12">
           <img class="rounded-xl shadow-md shadow-teal-500" src="./assets/images/profile-1.png" alt="">
         </div>
         <!-- column 2-->
-        <div class="space-y-4 order-1 lg:order-2">
+        <div class="space-y-4 order-1 md:order-2">
           <p class="text-xl font-semibold">My <span class="text-teal-500">Intro</span></p>
           <h2 class="text-4xl font-extrabold leading-tight">About Me</h2>
           <p class="text-sm text-gray-400 text-">
