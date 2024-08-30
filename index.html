@@ -13,6 +13,9 @@
     rel="stylesheet">
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Boxicons cdn -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- tailwind & daisyui cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -79,12 +82,12 @@
         <!-- profile -->
         <div class="dropdown dropdown-end">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-            <div class="w-20 rounded-full border-2 border-cyan-400">
-              <img alt="Tailwind CSS Navbar component"
-                src="./assets/images/profile-1.png" />
+            <div class="w-20 rounded-full border-2 border-teal-500">
+              <img alt="Tailwind CSS Navbar component" src="./assets/images/profile-1.png" />
             </div>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content bg-red-200 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-red-200 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
             <li>
               <a class="justify-between">
                 Profile
@@ -98,27 +101,42 @@
       </div>
     </div>
     <!-- Hero section -->
-     <section class="py-10">
+    <section class="py-10">
       <!-- section container -->
-       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <!-- column 1 -->
-         <div class="space-y-4">
+        <div class="space-y-4">
           <p class="text-xl font-semibold">Hello, <span class="text-teal-500">I'm</span></p>
           <h2 class="text-5xl font-extrabold leading-tight">Jharul Islam Sahin</h2>
-          <h3 class="text-2xl sm:text-3xl text-white font-bold">I'm a <span id="animation" class="text-teal-500"></span></h3>
-          <p class="text-sm text-gray-400">With knowledge in web development and design, I offer the best projects resulting in quality work.</p>
-          <a class="btn bg-teal-500 text-white border-none" href="#">Let's Talk</a>
-         </div>
+          <h3 class="text-2xl sm:text-3xl text-white font-bold">I'm a <span id="animation" class="text-teal-500"></span>
+          </h3>
+          <p class="text-sm text-gray-400">With knowledge in web development and design, I offer the best projects
+            resulting in quality work.</p>
+
+          <!-- Social Links -->
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/profile.php?id=100048349835165" target="_blank"><i class='bx bxl-facebook text-2xl border-2 px-1 border-teal-500 rounded-full'></i></a>
+            <a href="https://www.linkedin.com/in/jharul-islam-sahin/" target="_blank"><i class='bx bxl-linkedin text-2xl border-2 px-1 border-teal-500 rounded-full'></i></a>
+            <a href="https://github.com/wadsahin/" target="_blank"><i class='bx bxl-github text-2xl border-2 px-1 border-teal-500 rounded-full'></i></a>
+            <a href="https://app.netlify.com/teams/wadsahinalom/sites" target="_blank"><i class='bx bxl-netlify text-2xl border-2 px-1 border-teal-500 rounded-full'></i></a>
+          </div>
+          <!-- btn -->
+          <a class="btn bg-teal-500 text-white border-none" href="#">More About Me</a>
+        </div>
         <!-- column 2 -->
-         <div>
-          <img class="rounded-full" src="./assets/images/profile-3.png" alt="">
-         </div>
-         
-       </div>
-     </section>
+        <div>
+          <img class="rounded-full shadow-md shadow-teal-500" src="./assets/images/profile-3.png" alt="">
+        </div>
+
+      </div>
+    </section>
   </header>
   <!-- main -->
   <main class="w-11/12 lg:w-4/6 mx-auto">
+    <!-- AboutUs Section -->
+    <section>
+
+    </section>
   </main>
   <!-- footer -->
   <footer>
@@ -126,7 +144,7 @@
   </footer>
 
   <!-- Link to JavaScript -->
-   <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
