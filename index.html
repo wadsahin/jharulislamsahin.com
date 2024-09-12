@@ -135,9 +135,9 @@
     </section>
   </header>
   <!-- main -->
-  <main class="w-11/12 lg:w-9/12 mx-auto">
+  <main class="">
     <!-- AboutUs Section -->
-    <section id="about" class="py-14 lg:py-20">
+    <section id="about" class="w-11/12 lg:w-9/12 mx-auto py-14 lg:py-20">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <!-- column 1 -->
         <div class="order-2 md:order-1 lg:w-11/12">
@@ -162,31 +162,59 @@
           <!-- btn -->
           <a class="btn hover:bg-indigo-600 bg-teal-500 text-white border-none" href="#">Contact Me</a>
         </div>
-
+    </section>
+    <!-- Skills section -->
+    <section id="skill-section" class="bg-black text-white mb-10">
+      <!-- section-container -->
+      <div class="w-11/12 lg:w-9/12 mx-auto flex flex-col md:flex-row justify-center items-center py-14 lg:py-24 gap-10 md:gap-0">
+        <!-- column 1 -->
+         <div class="w-11/12 lg:w-2/5 text-center md:text-start">
+          <h4 class="font-bold">Favorite <span class="text-teal-500">Skills</span></h4>
+          <h2 class="text-3xl font-bold mt-3 mb-6">My Skills</h2>
+          <p class="mb-8 text-sm lg:text-base text-gray-400">See fully what skills I have and perform, to <br class="hidden lg:block"> developer the projects for you.</p>
+          <a class="btn hover:bg-indigo-600 bg-teal-500 text-white border-none" href="#">See Projects</a>
+         </div>
+        <!-- column 2 -->
+         <div class="w-11/12 lg:w-3/5 flex justify-around gap-3">
+          <!-- skills column-1 -->
+           <div>
+             <h3 class="text-sm sm:text-md md:text-lg font-semibold mb-5"><span class="text-teal-500">01.</span> HTML & CSS</h3>
+             <h3 class="text-sm sm:text-md md:text-lg font-semibold mb-5"><span class="text-teal-500">02.</span> JavaScript</h3>
+             <h3 class="text-sm sm:text-md md:text-lg font-semibold mb-5"><span class="text-teal-500">03.</span> Bootstrap</h3>
+             <h3 class="text-sm sm:text-md md:text-lg font-semibold mb-5"><span class="text-teal-500">04.</span> TailwindCss</h3>
+           </div>
+          <!-- skills column-2 -->
+           <div>
+             <h3 class="text-sm sm:text-md md:text-lg font-semibold mb-5"><span class="text-teal-500">05.</span> Responsive Design</h3>
+             <h3 class="text-sm sm:text-md md:text-lg font-semibold mb-5"><span class="text-teal-500">06.</span> Git & GitHub</h3>
+             <h3 class="text-sm sm:text-md md:text-lg font-semibold mb-5"><span class="text-teal-500">07.</span> Figma to Web</h3>
+           </div>
+         </div>
+      </div>
+    </section>
+    <!-- Contact us -->
+    <section>
+      <div class="section-container w-11/12 sm:w-10/12 lg:w-1/2 mx-auto">
+        <h4 class="text-center font-bold mb-2">Get In <span class="text-teal-500">Touch</span></h4>
+        <h2 class="text-center text-4xl font-bold">Contact Me</h2>
+        <form action="" class="mt-16 grid grid-cols-1 md:grid-cols-2 grid-rows-7 gap-5">
+          <!-- <div class="flex justify-center gap-5"> -->
+          <input type="text" class="col-span-1 row-span-1 py-5 pl-5 rounded-md bg-black" placeholder="Your name"
+            class="input w-full max-w-xs" />
+          <input type="text" class="col-span-1 row-span-1 py-5 pl-5 rounded-md bg-black" placeholder="Your email"
+            class="input w-full max-w-xs" />
+          <!-- </div> -->
+          <textarea class="textarea col-span-1 md:col-span-2 row-span-3 md:row-span-4 bg-black"
+            placeholder="Put your message here.."></textarea>
+          <button
+            class="btn hover:bg-indigo-600 bg-teal-500 text-white font-semibold border-none col-span-1 md:col-span-2 w-full md:w-fit mx-auto mt-6">Send
+            your message
+          </button>
+        </form>
+      </div>
     </section>
   </main>
 
-
-  <!-- Contact us -->
-  <section class="py-5">
-    <div class="section-container w-11/12 sm:w-10/12 lg:w-1/2 mx-auto">
-      <h4 class="text-center font-bold mb-2">Get In <span class="text-teal-500">Touch</span></h4>
-      <h2 class="text-center text-4xl font-bold">Contact Me</h2>
-      <form action="" class="mt-16 grid grid-cols-1 md:grid-cols-2 grid-rows-7 gap-5">
-        <!-- <div class="flex justify-center gap-5"> -->
-        <input type="text" class="col-span-1 row-span-1 py-5 pl-5 rounded-md bg-black" placeholder="Your name"
-          class="input w-full max-w-xs" />
-        <input type="text" class="col-span-1 row-span-1 py-5 pl-5 rounded-md bg-black" placeholder="Your email"
-          class="input w-full max-w-xs" />
-        <!-- </div> -->
-        <textarea class="textarea col-span-1 md:col-span-2 row-span-3 md:row-span-4 bg-black"
-          placeholder="Put your message here.."></textarea>
-        <button
-          class="btn hover:bg-indigo-600 bg-teal-500 text-white font-semibold border-none col-span-1 md:col-span-2 w-full md:w-fit mx-auto mt-6">Send your message
-        </button>
-      </form>
-    </div>
-  </section>
   <!-- footer -->
   <footer class="bg-black py-10 lg:py-20 relative">
     <section class="w-11/12 lg:w-9/12 mx-auto">
@@ -194,7 +222,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-3 items-center content-between">
         <!-- footer column 1-->
         <div class="space-y-2 text-center md:text-start">
-          <h2 class="text-3xl font-extrabold">Jharul Islam <span class="text-indigo-500">Sahin</span></h2>
+          <h2 class="text-3xl font-extrabold">Jharul Islam <span class="text-teal-500">Sahin</span></h2>
           <h3 class="text-xl text-white font-bold">front-end developer
           </h3>
         </div>
@@ -202,17 +230,17 @@
         <!-- Social Links -->
         <div class="flex gap-5 mx-auto md:m-0">
           <a href="https://www.facebook.com/profile.php?id=100048349835165" target="_blank"><i
-              class='bx bxl-facebook text-2xl border-2 px-1 border-indigo-500 rounded-full'></i></a>
+              class='bx bxl-facebook text-2xl border-2 px-1 border-teal-500 rounded-full'></i></a>
           <a href="https://www.linkedin.com/in/jharul-islam-sahin/" target="_blank"><i
-              class='bx bxl-linkedin text-2xl border-2 px-1 border-indigo-500 rounded-full'></i></a>
+              class='bx bxl-linkedin text-2xl border-2 px-1 border-teal-500 rounded-full'></i></a>
           <a href="https://github.com/wadsahin/" target="_blank"><i
-              class='bx bxl-github text-2xl border-2 px-1 border-indigo-500 rounded-full'></i></a>
+              class='bx bxl-github text-2xl border-2 px-1 border-teal-500 rounded-full'></i></a>
           <a href="https://app.netlify.com/teams/wadsahinalom/sites" target="_blank"><i
-              class='bx bxl-netlify text-2xl border-2 px-1 border-indigo-500 rounded-full'></i></a>
+              class='bx bxl-netlify text-2xl border-2 px-1 border-teal-500 rounded-full'></i></a>
         </div>
         <!-- footer column 3-->
         <div class="">
-          <p class="text-slate-400 text-center md:text-start">&copy; Copyright sahin  alom. All rights reserved</p>
+          <p class="text-slate-400 text-center md:text-start">&copy; Copyright sahin alom. All rights reserved</p>
         </div>
       </div>
     </section>
@@ -220,7 +248,7 @@
     <div class="absolute right-5 hidden md:block">
       <a href="#">
         <!-- <i class='bx bxl-facebook text-2xl border-2 px-1 border-teal-500 rounded-full'></i> -->
-        <i class='bx bx-up-arrow-alt text-3xl  text-indigo-500'></i>
+        <i class='bx bx-up-arrow-alt text-3xl text-indigo-500'></i>
       </a>
     </div>
   </footer>
